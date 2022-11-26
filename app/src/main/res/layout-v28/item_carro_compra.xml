@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:layout_marginHorizontal="7dp"
+    android:layout_marginVertical="7dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    style="?attr/materialCardViewFilledStyle"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F0EC"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tvCarroNombreProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle de la seleccion"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCarroPrecioProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="precio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvCarroNombreProd"
+            app:layout_constraintVertical_bias="0.23" />
+
+        <TextView
+            android:id="@+id/tvCarroSubtotalProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 X 1.800 = 5.400"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@+id/tvCarroPrecioProd"
+            app:layout_constraintTop_toTopOf="@+id/tvCarroPrecioProd"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/materialToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E1CF99"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCarroPrecioProd"
+            >
+
+            <ImageView
+                android:id="@+id/ivCarroPopup"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@color/black" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5"></Space>
+
+            <Button
+                android:id="@+id/btnCarroBorrarItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#43A047"
+                android:shadowColor="#3949AB"
+                app:cardCornerRadius="15dp"
+                android:shadowDx="1.8"
+                android:shadowDy="1.8"
+                android:text="Borrar\nItem"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_baseline_remove_shopping_cart_24" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

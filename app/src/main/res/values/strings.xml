@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Demo AppDespacho OnLine</string>
+    <string name="btn_agregar_item">Agregar</string>
+    <string name="carrito_de_compras">Carrito de compras</string>
+    <string name="a_pagar_64_354">A pagar: $00.000 -</string>
+</resources>
