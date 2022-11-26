@@ -35,5 +35,6 @@ Mas info a medida que continua escalando el proyecto...
 
 ![CapturaCarroCompra](https://user-images.githubusercontent.com/12845540/204099737-07402059-6836-4f69-a88f-70e404b3fd7c.PNG)
 ![CapturaErrorConeccion](https://user-images.githubusercontent.com/12845540/204099739-2373ad9f-4f5d-421a-bfe5-06a12b1d33be.PNG)
+
 ![CapturaPantallaHome](https://user-images.githubusercontent.com/12845540/204099740-1dd1bdde-f323-42cd-b0bd-93491ccfb383.PNG)
 ![CapturaProducto](https://user-images.githubusercontent.com/12845540/204099744-aa96527b-7b81-4e49-9797-d481c2aa8aeb.PNG)
