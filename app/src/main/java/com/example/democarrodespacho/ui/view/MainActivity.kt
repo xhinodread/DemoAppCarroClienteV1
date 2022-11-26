@@ -171,7 +171,7 @@ class MainActivity: AppCompatActivity() {
         }
     }
     private fun hacerEliminarItemProductoCarro(nombreProducto: String){
-        Toast.makeText(this, "Eliminando $nombreProducto", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "Eliminando $nombreProducto", Toast.LENGTH_SHORT).show()
         carroComprasViewModel.borrarItemProductoCarroCompraDb(nombreProducto)
     }
     private fun enviarSolicitudPedidoCarroCompra(){
