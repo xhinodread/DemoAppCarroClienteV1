@@ -31,6 +31,8 @@ El proyecto tiene algunos bugs detectados, como por ejemplo.
            
 Aun falta implementar los test unitarios
 ....
+
+Nuevas funcionalidades agregadas, un menu lateral(Navigation drawer), con tres opciones, datos del clientes(My cuenta), Info de la app(Acerca de) y salir(LogOut)
 Mas info a medida que continua escalando el proyecto...
 
 <p align="center"style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: red; border-style:solid;" >
