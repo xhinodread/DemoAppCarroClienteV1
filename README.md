@@ -33,6 +33,7 @@ Aun falta implementar los test unitarios
 ....
 
 Nuevas funcionalidades agregadas, un menu lateral(Navigation drawer), con tres opciones, datos del clientes(My cuenta), Info de la app(Acerca de) y salir(LogOut)
+
 Mas info a medida que continua escalando el proyecto...
 
 <p align="center"style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: red; border-style:solid;" >
@@ -40,6 +41,13 @@ Mas info a medida que continua escalando el proyecto...
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://user-images.githubusercontent.com/12845540/204099739-2373ad9f-4f5d-421a-bfe5-06a12b1d33be.PNG" title="Error en la conección"  >
 </p>
+
+<p align="center" style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: white; border-style:solid;" >
+  <img src="https://user-images.githubusercontent.com/12845540/204099744-aa96527b-7b81-4e49-9797-d481c2aa8aeb.PNG" title="Detalle del producto" >
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://user-images.githubusercontent.com/12845540/204099737-07402059-6836-4f69-a88f-70e404b3fd7c.PNG" title="Carrito de compras" >
+</p>
+
 
 <p align="center" style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: white; border-style:solid;" >
   <img src="https://user-images.githubusercontent.com/12845540/204099744-aa96527b-7b81-4e49-9797-d481c2aa8aeb.PNG" title="Detalle del producto" >
