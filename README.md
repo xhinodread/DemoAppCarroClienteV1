@@ -50,7 +50,9 @@ Mas info a medida que continua escalando el proyecto...
 
 
 <p align="center" style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: white; border-style:solid;" >
-  <img src="https://user-images.githubusercontent.com/12845540/204099744-aa96527b-7b81-4e49-9797-d481c2aa8aeb.PNG" title="Detalle del producto" >
+  <img src="https://user-images.githubusercontent.com/12845540/209406107-b90981cb-8585-4182-95d6-efb108fa26b2.PNG" title="Detalle del producto" >
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/12845540/204099737-07402059-6836-4f69-a88f-70e404b3fd7c.PNG" title="Carrito de compras" >
+  <img src="https://user-images.githubusercontent.com/12845540/209406273-e322de6a-cfd1-46cc-b06f-6fcfed2aa515.PNG" title="Carrito de compras" >
 </p>
+![CapturaDrawer](https://user-images.githubusercontent.com/12845540/209406107-b90981cb-8585-4182-95d6-efb108fa26b2.PNG)
+![CapturaMyCuenta](https://user-images.githubusercontent.com/12845540/209406273-e322de6a-cfd1-46cc-b06f-6fcfed2aa515.PNG)
