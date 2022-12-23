@@ -22,8 +22,8 @@ class ResponseProductoRepository @Inject constructor(
         return response.map { it.toDomain() }
     }
 
-    suspend fun setEnviarPedidoCarroComprasToApi(requestBody: RequestBody){
-        api.enviarPostPedido(requestBody)
+    suspend fun setEnviarPedidoCarroComprasToApi(requestBody: RequestBody): String{
+       return api.enviarPostPedido(requestBody)
     }
 
     // ROOM DATABASE ***

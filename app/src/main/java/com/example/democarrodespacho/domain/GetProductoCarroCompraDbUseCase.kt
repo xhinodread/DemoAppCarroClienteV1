@@ -13,7 +13,7 @@ class GetProductoCarroCompraDbUseCase @Inject constructor(
  ){
 
     //suspend operator fun invoke(nombre: String): List<Producto?> {
-    suspend operator fun invoke(nombre: String): Pedidos {
+    suspend operator fun invoke(nombre: String): Pedidos? {
         val productoEnCarroCompra = repository.getProductoCarroCompraFromDatabase(nombre)
         //Log.d("onCreate", "productos: ${producto.toString()}")
         return productoEnCarroCompra

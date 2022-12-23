@@ -1,6 +1,16 @@
 <resources>
-    <string name="app_name">Demo AppDespacho OnLine</string>
+    <string name="app_name">Demo AppDespacho</string>
     <string name="btn_agregar_item">Agregar</string>
     <string name="carrito_de_compras">Carrito de compras</string>
     <string name="a_pagar_64_354">A pagar: $00.000 -</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">Cerrar</string>
+    <string name="txt_acerca">
+        AppDespacho, es una aplicación pensada para el micro y pequeño negocio. \n
+        El cual tiene la necesidad de tener una herramienta online que le permita
+        a sus clientes realizar pedido de productos sin necesidad de abandonar sus
+        tareas, y al negocio contar con una vitrina digital online, para mantener
+        un stock de productos a clientes exclusivos y publico en general. \n\n\n
+        Productos digitales Chile Región\n chileregion@gmail.com
+    </string>
 </resources>

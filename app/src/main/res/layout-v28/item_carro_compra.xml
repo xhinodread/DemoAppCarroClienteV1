@@ -6,15 +6,15 @@
     android:layout_height="260dp"
     android:layout_marginHorizontal="7dp"
     android:layout_marginVertical="7dp"
-    app:cardCornerRadius="5dp"
-    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
     style="?attr/materialCardViewFilledStyle"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F4F0EC"
+        android:background="@color/purple_99"
         android:padding="2dp">
 
         <TextView
@@ -57,7 +57,7 @@
             android:id="@+id/materialToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E1CF99"
+            android:background="@drawable/style_status_bar"
             android:gravity="center"
             android:padding="10dp"
             android:layout_marginTop="15dp"
@@ -82,7 +82,7 @@
                 android:id="@+id/btnCarroBorrarItem"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#43A047"
+                android:backgroundTint="@color/purple_700"
                 android:shadowColor="#3949AB"
                 app:cardCornerRadius="15dp"
                 android:shadowDx="1.8"

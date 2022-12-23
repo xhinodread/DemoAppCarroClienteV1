@@ -15,10 +15,12 @@ class EnviarApiPedidoCarroCompraUseCase @Inject constructor(
     private val repository: ResponseProductoRepository,
     private val pedidosAux: PedidosAux
 ) {
-    suspend operator fun invoke(listadoPedido: List<Pedidos>) {
+    suspend operator fun invoke(listadoPedido: List<Pedidos>): String {
         /*** ENVIAR PEDIDO AL API CON METODO POST ***/
         val cuerpoPost = pedidosAux.cuerpoPostApi(listadoPedido)
         //Log.d("onCreate", "okhttp3:" + cuerpoPost.toString())
-        repository.setEnviarPedidoCarroComprasToApi(cuerpoPost)
+        val envioPost = repository.setEnviarPedidoCarroComprasToApi(cuerpoPost)
+
+        return envioPost
     }
 }

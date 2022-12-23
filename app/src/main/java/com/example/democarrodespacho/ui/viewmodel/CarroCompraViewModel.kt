@@ -1,6 +1,7 @@
 package com.example.democarrodespacho.ui.viewmodel
 
 import android.content.Context
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -22,6 +23,7 @@ class CarroCompraViewModel @Inject constructor(
     private val setDeletTodoProdCarroCompraUseCase: SetDeletTodoProdCarroCompraUseCase,
     private val enviarWhatAppPedidoCarroUseCase: EnviarWhatAppPedidoCarroUseCase,
     private val enviarApiPedidoCarroCompraUseCase: EnviarApiPedidoCarroCompraUseCase,
+    private val getClienteDbUseCase: GetClienteDbUseCase,
     private val application: MvvDemoDespachoApp
 ): ViewModel(){
 
@@ -30,6 +32,7 @@ class CarroCompraViewModel @Inject constructor(
     val totalPedidoCarroCompra = MutableLiveData<Int?>()
     val productoCarroCompraModel = MutableLiveData<Pedidos?>()
     val isLoading = MutableLiveData<Boolean>()
+    val pedidoCargado = MutableLiveData<String>()
 
     fun agregarProductoAlCarro(elProducto: CarroCompraEntity){
         viewModelScope.launch {
@@ -105,16 +108,26 @@ class CarroCompraViewModel @Inject constructor(
     fun enviarPedidoWhatApp(context: Context){
         viewModelScope.launch {
             val listPedidoCarroCompra = pedidoCarroCompraDbUseCase()
-            var mensaje = PedidosAux().crearMensajeWs(listPedidoCarroCompra)
-            mensaje += "\n Cliente Rut: 12345678-0 Chile Aracena Coquimbo"
+            val elCliente = getClienteDbUseCase()
+            //Log.d("onCreate", "elCliente: "+ elCliente.toString())
+            var mensaje =  ".:::: Nuevo pedido recibido ::::.\n"+ PedidosAux().crearMensajeWs(listPedidoCarroCompra)
+            mensaje += "\n Cliente Rut: ${elCliente.rut}\n Nombre: ${elCliente.nombre}\n Direccion: ${elCliente.direccion}"
+            mensaje += "\n.:::::::::::::::::::::::::::::::."
             enviarWhatAppPedidoCarroUseCase(mensaje, context)
         }
     }
 
     fun enviarPedidoPostApi(){
         viewModelScope.launch {
+            pedidoCargado.postValue("")
             val listPedidoCarroCompra = pedidoCarroCompraDbUseCase()
-            enviarApiPedidoCarroCompraUseCase(listPedidoCarroCompra)
+            val envioPedido = enviarApiPedidoCarroCompraUseCase(listPedidoCarroCompra)
+            //Log.d("onCreate", "enviarPostApi: " + envioPedido.toString())
+            if(envioPedido == "success"){
+                pedidoCargado.postValue("true")
+            }else{
+                pedidoCargado.postValue("false")
+            }
         }
     }
 

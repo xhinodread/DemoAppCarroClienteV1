@@ -7,6 +7,7 @@ import android.content.Intent
 import android.net.Uri
 import android.system.Os.accept
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 import com.example.democarrodespacho.R
@@ -47,6 +48,16 @@ class PedidosAux @Inject constructor(){
 
     fun countDuplicates(values: List<String>): List<Pair<String, Int>> {
         return values.groupingBy { it }.eachCount().filter { it.value >= 1 }.toList()
+    }
+
+    fun crearAlert(binding: ViewBinding, mensaje:String ="", positiveBtn:Boolean= false){
+        val dialogAlert= AlertDialog.Builder(binding.root.context)
+        dialogAlert.setMessage(mensaje.toUpperCase())
+            .setPositiveButton("Cerrar"){ dialog , _->
+                dialog.dismiss()
+            }
+        dialogAlert.setIcon(R.drawable.ic_baseline_error_outline_24)
+        dialogAlert.show()
     }
 
     fun crearAlertPopup(binding: ViewBinding, positiveBtn:Boolean= false){
@@ -96,6 +107,9 @@ class PedidosAux @Inject constructor(){
         }
         return parcialEnv
     }
+
+    fun Context.toast(message: CharSequence) =
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
 //    fun calculaSubtotalPedidos(carroComprasList: List<CarroCompraAgrupado>): String{
 //        val listaProducto = ProductoProvider.productoList
@@ -170,15 +184,6 @@ class PedidosAux @Inject constructor(){
         }
     }
     fun cuerpoPostApi(listadoPedido: List<Pedidos>): RequestBody {
-  /**
-   *  //Log.d("enviarSolicitud", "llamarPostApi---> $dataEnvio")
-        val countDuplicates = pedidosAux.countDuplicates(dataEnvio)
-        //Log.d("enviarSolicitud", "cant---> $countDuplicates")
-        val nuevoListadoPedido = countDuplicates.map { item -> Pedidos(item.first, item.second) }
-        //Log.d("enviarSolicitud", "elMap---> ${elMap}")
-        val otro = ArrayList<Pedidos>(nuevoListadoPedido)
-        //Log.d("enviarSolicitud", "otro---> ${otro}")
-***/
         // Create JSON using JSONObject
         val pedJson = JSONArray()
         listadoPedido.forEach { pedJson.put(JSONArray().put(it)) }

@@ -6,8 +6,8 @@ import com.example.democarrodespacho.domain.model.Producto
 import javax.inject.Inject
 
 class GetProductoDbUseCase @Inject constructor(
-    private val repository: ResponseProductoRepository){
-
+    private val repository: ResponseProductoRepository
+){
     //suspend operator fun invoke(nombre: String): List<Producto?> {
     suspend operator fun invoke(nombre: String): Producto {
         val producto = repository.getProductoFromDatabase(nombre)

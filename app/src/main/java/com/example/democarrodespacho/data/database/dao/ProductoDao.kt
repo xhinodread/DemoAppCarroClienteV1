@@ -5,8 +5,10 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.democarrodespacho.data.database.entities.CarroCompraEntity
+import com.example.democarrodespacho.data.database.entities.ClienteEntity
 import com.example.democarrodespacho.data.database.entities.PedidosEntity
 import com.example.democarrodespacho.data.database.entities.ProductoEntity
+import com.example.democarrodespacho.domain.model.Cliente
 import com.example.democarrodespacho.domain.model.Producto
 import kotlinx.coroutines.flow.Flow
 
@@ -31,10 +33,6 @@ interface ProductoDao {
 
     @Query("DELETE FROM productos")
     suspend fun delProductos()
-
-    // suspend fun getProductosByNameDb(nombre: String): List<ProductoEntity>
-//    @Insert(onConflict = OnConflictStrategy.IGNORE)
-//    suspend fun addProducto(producto: ProductoEntity)
 
     /*** CARRO DE COMPRAS (pedidos)***/
     @Insert(onConflict = OnConflictStrategy.IGNORE)
@@ -69,6 +67,16 @@ interface ProductoDao {
 
     @Query("DELETE FROM carro_compras WHERE nombre_producto = :nombreProducto ")
     suspend fun deleteTodoProductoCarroCompra(nombreProducto: String="")
+
+    /*** CLIENTE ***/
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun addCliente(cliente: ClienteEntity)
+
+    @Query("SELECT * FROM clientes LIMIT 1")
+    suspend fun getClienteDb(): ClienteEntity
+
+    @Query("DELETE FROM clientes")
+    suspend fun deleteCliente()
 
 }
 

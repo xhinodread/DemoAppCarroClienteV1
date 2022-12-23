@@ -4,14 +4,16 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.example.democarrodespacho.data.database.dao.ProductoDao
 import com.example.democarrodespacho.data.database.entities.CarroCompraEntity
+import com.example.democarrodespacho.data.database.entities.ClienteEntity
 import com.example.democarrodespacho.data.database.entities.ProductoEntity
 
 @Database(
-    version = 2,
-    entities = [ProductoEntity::class, CarroCompraEntity::class],
+    version = 3,
+    entities = [ProductoEntity::class, CarroCompraEntity::class, ClienteEntity::class],
 )
-//    entities = [CarroCompra::class, ProductoEntity::class],
-//exportSchema = true,
+//  entities = [ProductoEntity::class, CarroCompraEntity::class],
+//  entities = [CarroCompra::class, ProductoEntity::class],
+//  exportSchema = true,
 
 //@TypeConverters(CarroCompraConverters::class)
 abstract class CarroCompraDataBase: RoomDatabase() {

@@ -21,7 +21,7 @@ object RoomModule {
     @Singleton
     @Provides
     fun provideRoom(@ApplicationContext context: Context) =
-        Room.databaseBuilder(context, CarroCompraDataBase::class.java, QUOTE_DATABASE_NAME).addMigrations(MIGRATION_1_2).build()
+        Room.databaseBuilder(context, CarroCompraDataBase::class.java, QUOTE_DATABASE_NAME).addMigrations(MIGRATION_2_3).build()
 
     @Singleton
     @Provides
@@ -32,6 +32,12 @@ object RoomModule {
             // The following query will add a new column called lastUpdate to the notes database
             //database.execSQL("ALTER TABLE cliente_pedidos CHANGE fecha fecha DATETIME NULL")
             database.execSQL("CREATE TABLE 'productos' ('id' INTEGER primary key not null, 'nombre' TEXT, 'precio' INTEGER, 'foto' TEXT ) ")
+        }
+    }
+
+    private val MIGRATION_2_3: Migration = object : Migration(2, 3) {
+        override fun migrate(database: SupportSQLiteDatabase) {
+            database.execSQL("CREATE TABLE 'clientes' ('id' INTEGER primary key not null, 'nombre' TEXT, 'rut' TEXT, 'email' TEXT, 'direccion' TEXT ) ")
         }
     }
 

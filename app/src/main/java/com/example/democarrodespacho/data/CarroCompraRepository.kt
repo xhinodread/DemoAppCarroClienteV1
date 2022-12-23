@@ -31,7 +31,7 @@ class CarroCompraRepository @Inject constructor(
         val response: List<CarroCompraEntity> = productoDao.getCarroCompraDb()
         return response.map { it.toDomain() }
     }
-    suspend fun getProductoCarroCompraFromDatabase(nombreProducto: String): Pedidos {
+    suspend fun getProductoCarroCompraFromDatabase(nombreProducto: String): Pedidos? {
         val reponse = productoDao.getProductoPedidoCarroCompraDb(nombreProducto)
         return reponse?.toDomain()
     }
