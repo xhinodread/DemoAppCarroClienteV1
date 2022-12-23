@@ -40,19 +40,19 @@ Mas info a medida que continua escalando el proyecto...
   <img src="https://user-images.githubusercontent.com/12845540/204099740-1dd1bdde-f323-42cd-b0bd-93491ccfb383.PNG" title="Home app" style="padding: 10px;"  >
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://user-images.githubusercontent.com/12845540/204099739-2373ad9f-4f5d-421a-bfe5-06a12b1d33be.PNG" title="Error en la conección"  >
+  <img src="https://user-images.githubusercontent.com/12845540/209406107-b90981cb-8585-4182-95d6-efb108fa26b2.PNG" title="Drawer menu" >
 </p>
 
 <p align="center" style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: white; border-style:solid;" >
   <img src="https://user-images.githubusercontent.com/12845540/204099744-aa96527b-7b81-4e49-9797-d481c2aa8aeb.PNG" title="Detalle del producto" >
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://user-images.githubusercontent.com/12845540/204099737-07402059-6836-4f69-a88f-70e404b3fd7c.PNG" title="Carrito de compras" >
+  <img src="https://user-images.githubusercontent.com/12845540/209406273-e322de6a-cfd1-46cc-b06f-6fcfed2aa515.PNG" title="My cuenta" >
 </p>
 
 
 <p align="center" style="margin-left: 2.5em;padding: 0 7em 2em 0;border-width: 2px; border-color: white; border-style:solid;" >
-  <img src="https://user-images.githubusercontent.com/12845540/209406107-b90981cb-8585-4182-95d6-efb108fa26b2.PNG" title="Detalle del producto" >
+  <img src="https://user-images.githubusercontent.com/12845540/209406107-b90981cb-8585-4182-95d6-efb108fa26b2.PNG" title="Drawer menu" >
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://user-images.githubusercontent.com/12845540/209406273-e322de6a-cfd1-46cc-b06f-6fcfed2aa515.PNG" title="Carrito de compras" >
+  <img src="https://user-images.githubusercontent.com/12845540/209406273-e322de6a-cfd1-46cc-b06f-6fcfed2aa515.PNG" title="My cuenta" >
 </p>
-![CapturaDrawer](https://user-images.githubusercontent.com/12845540/209406107-b90981cb-8585-4182-95d6-efb108fa26b2.PNG)
-![CapturaMyCuenta](https://user-images.githubusercontent.com/12845540/209406273-e322de6a-cfd1-46cc-b06f-6fcfed2aa515.PNG)
