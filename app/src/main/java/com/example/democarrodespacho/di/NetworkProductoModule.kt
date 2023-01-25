@@ -52,7 +52,7 @@ object NetworkProductoModule {
 class HeaderIntercerptor: Interceptor{
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request().newBuilder()
-            .addHeader("x-api-key", "chileregion")
+            .addHeader("x-api-key", "__________")
             .build()
         return chain.proceed(request)
     }
